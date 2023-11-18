@@ -27,7 +27,7 @@ html{
     position: sticky;
     top: 10px;
     overflow: auto;
-    background-color:#006fc9;
+    background-color:black;
     padding: 5px;
     /* border-radius: 13px; */
     /* background-color:transparent; */
@@ -186,23 +186,15 @@ html{
 }
 
 .form{
-    border:1px solid white;
-    display:grid;
-    margin:  auto;
-    width: 50%;
-    /* height: 500px; */
-    margin-top :150px;
-    background-color: #050f18d4;
+    margin: 50rm;
 }
 
 
-.IP{
-    margin: 10px;
-}
-
-.IP input{
-    border-radius:5px;
-    width: 400px;
-    height: 20px;
+.form input{
+    display: block;
+    justify-content: center ;
+    height: 30px;
+    width: 500px;
+    margin: 10rm;
     text-align: center;
 }
