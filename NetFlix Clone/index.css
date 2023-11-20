@@ -8,16 +8,15 @@
 }
 
 header{
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
-    top: 10px;
+    top: 10px; */
 }
 
 
 
 /* NAVBAR */
 .navbar{
-    /* background-color:black; */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -36,9 +35,9 @@ header{
 .logo-img{
     background-image: url('images/logo2.png');
     background-size: cover;
-    height: 36px;
-    width: 135px;
-    margin-left: 2rem;
+    height: 50px;
+    width: 188px;
+    margin-left: 3rem
 }
 
 /* searchbar */
@@ -48,7 +47,7 @@ header{
     border-top-left-radius:7px ;
     border-bottom-right-radius: 7px;
     border-top-right-radius:7px ;
-    width: 42rem;
+    width: 39rem;
     border: 1.5px solid white;
     background-color:rgba(0, 0, 0, 0.2);
 
@@ -175,6 +174,9 @@ header{
 .email-btn i{
     background-color:#e50914;
     margin-left: 10px;
+}
+.email-btn i:hover{
+    background-color:#920e15;
 
 }
 
@@ -348,4 +350,32 @@ footer{
 
 .btn1{
     /* margin-left: 10px; */
+}
+
+.panel2{
+    padding: 50px 0px;
+    display: grid;
+    place-items: center;
+    background-color:#000000;
+    color:white;
+}
+.panel2 h1{
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+.add-panel2 i{
+    font-size: 1.9rem;
+    margin-right: 1rem;
+}
+
+.add-panel2{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 3rem;
+    width: 66%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:rgb(51, 48, 48);
+    font-size: 1.2rem;
 }
