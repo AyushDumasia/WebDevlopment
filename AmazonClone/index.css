@@ -44,10 +44,7 @@ header{
 }
 
 /* BOX2 */
-.nav-add{
-    /* margin-left: 20px; */
 
-}
 .add-first{
     color: rgb(154, 146, 137);
     font-size: 0.7rem;
@@ -114,8 +111,6 @@ header{
     border: 2px solid pink;
     text-shadow: 2px solid black;
 } */
-.nav-signin{
-}
 
 span{
     color: rgb(154, 146, 137);
