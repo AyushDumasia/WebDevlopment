@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+
+
+.playstore-icon{
+    margin: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: black;
+    height: 50px;
+    width: 132px;
+}
+
+.text-con{
+    font-size: 10px;
+}
+.playstore{
+    font-size: 18px;
+}
+
+.icon{
+    display: flex;
+    margin: 4px;
+    background-image:url('game.png');
+    background-size: cover;
+    height: 30px;
+    width:30px;
+    padding: 2px;
+}
