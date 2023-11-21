@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    color: black;
+    background-color: #e6e6e6;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #2b2638;
+    padding: 30px 0px;
+}
+
+.wrapper .sidebar h2{
+    color:aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.wrapper .sidebar ul li{
+   padding: 15px;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+}
+
+.wrapper .sidebar ul li a{
+    color:white;
+    display: block;
+    padding: 2px;
+}
+
+.wrapper .sidebar ul li a i {
+    width: 25px;
+    /* padding-right: 10px; */
+
+}
+
+.wrapper .sidebar ul li:hover{
+    background-color:gray;
+}
+
+.social_media{
+    align-items: end;
+}
+
+
+.wrapper .sidebar .social_media{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+
+
+.wrapper .sidebar .social_media a{
+    display: block;
+    width: 40px;
+    background-color: #746f85;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.social_media i{
+    /* display: flex; */
+    justify-content: space-evenly;
+    color: white;
+    font-size: 25px;
+}
+
+.wrapper .main_content{
+    width: 100%;
+    margin-left:200px ;
+}
+
+.wrapper .main_content .header{
+    padding: 20px;
+    
+}
+
+.profile-pic{
+    display: block;
+    height: 500px;
+    width: 500px;
+
+}
+
+
+
+.pic{
+    background-image: url('E:\User_2\Downloads\WhatsApp Image 2023-11-12 at 02.06.18_d35f233d.jpg');
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
