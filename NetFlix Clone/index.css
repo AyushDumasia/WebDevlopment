@@ -113,14 +113,14 @@ header{
 }
 .main-section{
     padding-top: 200px;
-    justify-content: center;
-    align-items:end;
+    /* justify-content: center;
+    align-items:end; */
     height: 600px;
     /* background-color:aquamarine; */
 }
 
 .add-para{
-    display: block;
+    /* display: block */
     font-size: 56px;
     /* line-height: 10px; */
     /* justify-content: center; */
