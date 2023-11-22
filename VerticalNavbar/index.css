@@ -123,8 +123,9 @@ body{
     display: flex;
     align-items:center;
     justify-content: end;
-    /* height: 3rem; */
-    width: 90%;
+    height: 3rem;
+    width: 80%;
+    font-size: small;
     border-radius:50px;
 }
 
@@ -145,7 +146,7 @@ body{
 }
 
 .fa-circle-up{
-    padding-right: 68px;
+    padding-right: 60px;
     font-size: 25px;
 }
 
