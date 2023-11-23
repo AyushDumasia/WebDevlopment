@@ -1,9 +1,11 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
     /* background-color: #746f85; */
 }
 
@@ -125,6 +127,9 @@ body{
 }
 
 .navbar{
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0px;
     background-color: #0f172a;
     display: flex;
     align-items:center;
@@ -136,9 +141,11 @@ body{
     /* filter: blur(1px); */
     /* opacity: 0.2; */
     transition: all 1s;
+    /* backdrop-filter: blur(5px) brightness(80%) saturate(120%); */
 }
 .navbar:hover{
     scale: 1.1;
+
     box-shadow: 10px 10px 30px black;
 }
 
@@ -231,4 +238,56 @@ body{
     color: #7956ff;
 }
 
-.add-box{}
+
+
+.box-2{
+    /* height: 100vh;    */
+    width: 100%;
+    /* background-color:#34295f;    */
+}
+
+.box4{
+    width: 30%;
+    /* background-color: white; */
+    margin-top: 10px;
+}
+
+.add-box-5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.add-box-5 img{
+    /* width: 80%; */
+   display: flex;
+   justify-content: center;     
+   padding: 10px 0px 20px ;
+   transition: all 0.5s;
+}
+
+.add-box-5 img:hover{
+    scale: 1.09;
+}
+
+
+.add-start{
+    
+    background: radial-gradient(80% 75%, #000000, #475569);
+
+}
+
+.add-signal-box{
+    background: radial-gradient(10% 75%, #000000, #475569);
+
+}
+
+.add-signal{
+    box-shadow:5px 5px 20px black;
+    width : 45%;
+    background-color: rgb(255, 255, 255);
+}
+
+.add-signal-1{
+    width: 60%;
+    background-color: rgb(112, 39, 39);
+
+}
