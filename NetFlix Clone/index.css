@@ -36,15 +36,15 @@ header{
 .logo-img{
     background-image: url('images/logo2.png');
     background-size: cover;
-    height: 3rem;
-    width: 11rem;
+    height: 2.6rem;
+    width: 9.6rem;
     margin-left: 3rem
 }
 
 /* searchbar */
 
 .search{
-    /* display: none; */
+    display: none;
     border-bottom-left-radius: 2rem;
     border-top-left-radius:2rem ;
     border-bottom-right-radius: 2rem;
@@ -94,7 +94,7 @@ header{
     width: 5rem;
     height: 2.2rem;
     /* font-size: 1.1rem; */
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     border: none;
     background-color:#e50914;
 }
@@ -115,8 +115,10 @@ header{
 .main-section{
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 8rem;
     /* align-items:end; */
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     /* justify-content: center;
     align-items:end; */
     height :100vh;
@@ -126,26 +128,26 @@ header{
 .add-para{
     display: flex;
     flex-direction: column;
-    font-size: 4rem;
-    /* line-height: 10px; */
-    /* justify-content: center; */
+    font-size: 3rem;
+    /* width: 80vb; */
     text-align: center;
-    /* background-color:aquamarine; */
     font-weight: 1000;
-
+    margin-left: 20px;
 }
 .add-lines{
     margin: 1rem 0rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: normal;
 }
 .add-lines p{
+    /* opacity: 0.5; */
     margin: 10px 0px 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* font-weight: normal; */
 }
 .add-email{
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items:center;
 }
@@ -247,7 +249,7 @@ footer{
     display: block;
     margin: 2rem;
     text-decoration: none;
-    color:gray;
+    color:gray;  
 }
 
 .footer2 ul a:hover{
