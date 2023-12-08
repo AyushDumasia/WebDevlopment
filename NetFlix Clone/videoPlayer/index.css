@@ -6,47 +6,39 @@
 }
 
 body{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.639), rgba(34, 33, 33, 0.575)),url(images/main.jpg); */
     background-color:rgb(28, 26, 26);
     overflow: hidden;
 
 }
 header{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.639), rgba(34, 33, 33, 0.575)),url(images/main.jpg); */
     background-color:#121212;
     width: 100%;
     height: 100vh;
     background-size: cover;
 }
 .navbar{
-    /* background-color: rgba(0, 0, 0, 0.613); */
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
     height: 3rem;
     align-items: center;
-    /* background-color: aqua; */
 }
 .main-nav{
     width: 80%;
     display:flex;
     justify-content: end;
-    /* padding-right: 10px; */
 }
 .main-nav ul{
     display: flex;
     list-style: none;
-    /* gap: 2rem; */
     cursor: pointer;
 }
 .main-nav ul li{
     padding: 10px;
 }
 .main-nav ul li:hover{
-    /* color: rgb(223, 18, 18); */
     border-radius:10px;
     background-color:#242424;
-    /* text-decoration: underline; */
 }
 
 
@@ -57,7 +49,6 @@ header{
 
 .search{
     width:39% ;
-    /* background-color: rgb(26, 31, 29); */
     height: 2rem;
     display: flex;
     align-items: center;
@@ -93,9 +84,6 @@ header{
 }
 .user i{
     font-size: 1.5rem;
-    /* display: flex; */
-    /* text-align: center; */
-    /* margin: 25px; */
 }
 
 .main-content{
@@ -114,10 +102,47 @@ header{
     display: flex;
     height: 70vh;
     text-align: center;
-    box-shadow: 0px 0px 80px 20px rgba(165, 9, 9, 0.482);
+    box-shadow: 0px 0px 80px 20px rgba(165, 154, 154, 0.482);
     border-radius:10px;
+    /* animation: playerAni 5s alternate-reverse infinite ; */
+    animation: playerAni 20s alternate-reverse 20;
+}
 
+@keyframes playerAni{
+    0%{
+        box-shadow: 0px 0px 80px 20px rgba(59, 30, 127, 0.482);
+    }
+    10%{
+        box-shadow: 0px 0px 80px 20px rgba(93, 31, 31, 0.482);
+    }
+    20%{
+        box-shadow: 0px 0px 80px 20px rgba(33, 126, 53, 0.482);
+    }
+    30%{
+        box-shadow: 0px 0px 80px 20px rgba(93, 31, 31, 0.482);
+    }
+    40%{
+        box-shadow: 0px 0px 80px 20px rgba(126, 27, 102, 0.482);
+    }
+    50%{
+        box-shadow: 0px 0px 80px 20px rgba(93, 31, 31, 0.482);
 
+    }
+    60%{
+        box-shadow: 0px 0px 80px 20px rgba(96, 146, 42, 0.482);
+    }
+    70%{
+        box-shadow: 0px 0px 80px 20px rgba(93, 31, 31, 0.482);
+    }
+    80%{
+        box-shadow: 0px 0px 80px 20px rgba(109, 71, 28, 0.482);
+    }
+    90%{
+        box-shadow: 0px 0px 80px 20px rgba(93, 31, 31, 0.482);
+    }
+    100%{
+        box-shadow: 0px 0px 80px 20px rgba(121, 112, 112, 0.482);
+    }
 }
 .add-lines h2,p{
     padding-left: 10px;
@@ -129,10 +154,7 @@ header{
 }
 .player video{
     text-align: center;
-
-    /* box-shadow: 60px 60px 60px 20px rgba(255, 255, 255, 0.362); */
     width: 854px;   
-    /* height: 480px; */
     height: auto;
     border-radius:10px;
 }
@@ -157,10 +179,7 @@ header{
 }
 .add-para{
     padding-left: 5px;
-    /* background-color: #242424; */
     border-radius:10px;
-
-
 }
 .add-para h4{
     padding-left: 10px;
@@ -178,9 +197,6 @@ header{
     width: 55%;
     height: 100px;
     border-radius:10px;
-    /* border: 2px solid #fff; */
-    /* border-top-left-radius:10px; */
-    /* border-bottom-left-radius:10px; */
 }
 
 .add-section{
@@ -194,30 +210,19 @@ header{
     border-radius:50%;
 }
 
-
-
-
-
-/* Set the width and height of the scrollbar */
+/* scroll bar */
 ::-webkit-scrollbar {
     width: 7px;
-  }
-  
-  /* Track styles (the area where the scrollbar is located) */
-  ::-webkit-scrollbar-track {
-    background-color: #5c2c2c3f; /* You can change the background color */
-  }
-  
-  /* Handle styles (the draggable part of the scrollbar) */
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.133); 
-    height: 2px;/* You can change the color of the scrollbar handle */
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #55555534; /* You can change the color on hover */
-  }
-  
+}
+::-webkit-scrollbar-track {
+    background-color: #5c2c2c3f; 
+}
 
-  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.133); 
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #55555534; 
+}
