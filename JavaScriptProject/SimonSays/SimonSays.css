@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 3rem;
+
+}
+.btn-container{
+    /* margin-top: 100rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    width: 30rem;
+    height: 30rem;
+    align-items: center;
+}
+
+.btn{
+    text-align: center;
+    height: 40%;
+    width: 35%;
+    border-radius: 20%;
+    border: 5px solid white;
+}
+.red{
+    background-color: rgb(193, 60, 60);
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.green{
+    background-color: green;
+}
+
+.flash{
+    background-color: antiquewhite;
+}
