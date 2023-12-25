@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif
+        }
+        input{
+            width: 50%;
+            height: 50px;
+            font-size: larger;
+        }
+        .btn{
+            height: 50px;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <input type="text"placeholder= "Enter Your Task" >
+    <button class="btn">Add Task</button>
+        <ul>
+            <li>Eat <button class = "delete">delete</button></li>
+            <li>Sleep <button class = "delete">delete</button></li>
+        </ul>
+
+
+    <script>
+        let btn = document.querySelector("button");
+        let li = document.querySelector("li");
+        let ul = document.querySelector("ul");
+        let input = document.querySelector("input");
+
+        btn.addEventListener("click",function(){
+            
+            if(input.value == ""){
+                alert("Enter Something");
+            }
+            else{
+                let item = document.createElement("li");
+                let delbtn = document.createElement("button");
+                delbtn.innerText = "delete";
+                item.innerHTML = input.value;
+                delbtn.classList.add("delete");
+                ul.appendChild(item);
+                item.appendChild(delbtn);
+
+            }
+            input.value = "";
+        });
+
+        ul.addEventListener("click",function(){
+            if(event.target.nodeName == "BUTTON"){
+                let listItem = event.target.parentElement;
+                listItem.remove();
+            }
+        })
+
+    </script>
+</body>
+</html>
