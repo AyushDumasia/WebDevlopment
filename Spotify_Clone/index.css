@@ -66,8 +66,18 @@ body{
     width: 1.5rem;
     height: 1.5rem;
 }
+.add-icon:hover{
+    background-color:#242424;
+    border-radius: 50%;
+    height: 25px;
+}
 
+.forward-icon:hover{
+    background-color:#242424;
+    border-radius: 50%;
+    height: 25px;
 
+}
 .options{
     cursor: pointer;
     display: flex;
@@ -297,13 +307,14 @@ body{
     margin-right: 10px;
 }
 
-.vol-con input{
+.vol-con{
+    -webkit-appearance: none;
+    /* appearance: none; */
+    cursor: pointer;
+    width: 30%;
     height: 5px;
-
+    /* background-color: rgb(7, 37, 7); */
 }
-.vol-con input::-webkit-slider-thumb{
-    /* -webkit-appearance: none; */
-    width: 50%;
-    background-color: rgb(124, 11, 11);
-    
+.vol-con::-webkit-slider-runnable-track{
+    background-color: rgb(126, 152, 126);
 }

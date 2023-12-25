@@ -6,7 +6,7 @@
 body{
     /* font-family: 'Quicksand', sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
-    color:wheat;
+    color:wheat
 }
 body{
     display: flex;
@@ -38,13 +38,13 @@ body{
 
 .log-input{
     height: 2.5rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: 0.5rem;
 
     /* background: transparent; */
     /* opacity: 0.3; */
     background-color: rgba(0, 0, 0, 0.481) ;
-    border:1px solid white;
+    border-bottom:1px solid white;
     /* border: none; */
     padding-left:6px ;
 }
