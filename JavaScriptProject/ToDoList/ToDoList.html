@@ -4,29 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            font-family: 'Times New Roman', Times, serif
-        }
-        input{
-            width: 50%;
-            height: 50px;
-            font-size: larger;
-        }
-        .btn{
-            height: 50px;
-            width: 20%;
-        }
-    </style>
+    <link rel="stylesheet" href="ToDoList.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@100;200;300&family=Quicksand:wght@400;500&family=Roboto:wght@300;400;500&family=Source+Sans+3&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>To Do List</h1>
-    <input type="text"placeholder= "Enter Your Task" >
-    <button class="btn">Add Task</button>
+    <div class="container">
+        <input type="text"placeholder= "Enter Your Task" >
+        <button class="btn">Add Task</button>
+    </div>
         <ul>
-            <li>Eat <button class = "delete">delete</button></li>
-            <li>Sleep <button class = "delete">delete</button></li>
+            <li>Eat <button class = "delete">Delete</button></li>
+            <li>Sleep <button class = "delete">Delete</button></li>
         </ul>
 
 
@@ -44,9 +36,9 @@
             else{
                 let item = document.createElement("li");
                 let delbtn = document.createElement("button");
-                delbtn.innerText = "delete";
+                delbtn.innerText = "Delete";
                 item.innerHTML = input.value;
-                delbtn.classList.add("delete");
+                delbtn.classList.add("Delete");
                 ul.appendChild(item);
                 item.appendChild(delbtn);
 
