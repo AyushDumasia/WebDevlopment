@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="AgeCal.css">
+</head>
+<body>
+    <div class="mainContainer">
+    <h1>Calculate Your Age</h1>
+        <div class="container">
+            <input type="date" name="" id="date">
+            <button id = "btn">Calculate</button>
+        </div>
+    </div>
+<script>
+    let userInput = document.querySelector("#date");
+    let para = document.createElement("p")
+    let con = document.querySelector(".container");
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        let userInput = document.querySelector("#date");
+    
+        // Check if the element exists before setting properties
+        if (userInput) {
+            userInput.max = new Date().toISOString().split("T")[0];
+        } 
+    });
+    
+    function calculateAge() {
+    let userInput = document.querySelector("#date");
+    let birthDateStr = userInput.value;
+    
+    // Convert the input value to a Date object
+    let birthDate = new Date(birthDateStr);
+    
+    let d1 = birthDate.getDate();
+    let m1 = birthDate.getMonth() + 1;
+    let y1 = birthDate.getFullYear();
+    
+    let today = new Date();
+    
+    let d2 = today.getDate();
+    let m2 = today.getMonth() + 1;
+    let y2 = today.getFullYear();
+    
+    let d3, m3, y3;
+    
+    y3 = y2 - y1;
+    
+    if (m2 >= m1) {
+        m3 = m2 - m1;
+    } else {
+        y3--;
+        m3 = 12 + m2 - m1;
+    }
+    
+    if (d2 >= d1) {
+        d3 = d2 - d1;
+    } else {
+        m3--;
+        d3 = getDaysInMonth(y1, m1) + d2 - d1;
+    }
+    
+    if (m3 < 0) {
+        m3 = 11;
+        y3--;
+    }
+    para.innerText = `You are ${y3} year ${m3} month and ${d3} days old`;
+    insertElement();
+    console.log(y3, m3, d3);
+    }
+    
+    function getDaysInMonth(year, month) {
+        return new Date(year, month, 0).getDate();
+    }
+
+    function insertElement(){  
+        para.style.marginLeft = "30px";
+        para.style.marginTop = "30px";
+        para.style.color = "white";
+        con.after(para);
+    }
+    
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", function () {
+        calculateAge();
+    });
+</script>
+</body>
+</html>
