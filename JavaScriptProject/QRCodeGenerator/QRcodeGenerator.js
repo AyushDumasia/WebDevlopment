@@ -19,6 +19,7 @@ btn.addEventListener("click",function(){
 
     }
 });
+
 let para = document.querySelector("p");
 para.addEventListener("click",function(){
     para.style.textDecoration = "underline";
@@ -62,6 +63,8 @@ function warning(){
         warn.style.textAlign = "end";
         qrText.style.border = "2px solid red";
         isWarn = false;
+        para.style.color = "red"
+        para.style.textDecoration = "underline red"
     }
 }
 
@@ -82,3 +85,22 @@ copyBtn.addEventListener("click",function(){
     }
 })
 
+let loader = document.querySelector(".progress");
+qrImg.addEventListener("load",function(){
+    loader.style.display = "none";
+})
+
+let downBtn = document.querySelector("#downloadbtn");
+downBtn.addEventListener("click",function(){
+    if(qrText.value == "" ){
+        warning();
+    }
+    else{
+        let downloadLink = document.createElement("a");
+        downloadLink.href = qrImg.src;
+        downloadLink.download = "download_image.jpg";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
+})
