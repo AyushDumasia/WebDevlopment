@@ -6,11 +6,18 @@ function generateQR(){
 }
 let btn = document.querySelector("#btn");
 btn.addEventListener("click",function(){
-    qrImg.style.margin = "20px";
-    generateQR();
-    btn.style.marginTop = "10px";
-    para.style.fontSize = "15px";
+    if(qrText.value == ""){
+        warning();
+    }
+    else{
+        generateQR();
+        qrImg.style.margin = "20px";
+        para.style.fontSize = "15px";
+        para.style.textDecoration = "none";
+        warn.remove();
+        qrText.style.border = "2px solid green";
 
+    }
 });
 let para = document.querySelector("p");
 para.addEventListener("click",function(){
@@ -27,9 +34,51 @@ qrText.addEventListener("click",function(){
 })
 
 let reset = document.querySelector("#resetbtn");
+let mainCon = document.querySelector(".mainContainer");
+let container = document.querySelector(".container");
 reset.addEventListener("click",function(){
-    qrText.value = "";
-    qrImg.src = "";
-    btn.style.marginTop = "-10px";
+    if(qrText.value == ""){
+        warning();
+    }
+    else{
+        qrImg.style.margin = "0px";
+        qrText.value = "";
+        qrImg.src = "";
+        warn.remove();
+    }
 
 })
+
+let isWarn = true;
+let warn = document.createElement("p");
+function warning(){
+    if(isWarn == true){
+        warn.innerText = `Enter Something`;
+        warn.style.color = "red";
+        warn.style.fontSize = "10px";
+        warn.style.margin = "0px";
+        mainCon.append(warn);
+        warn.style.textDecoration = "underline";
+        warn.style.textAlign = "end";
+        qrText.style.border = "2px solid red";
+        isWarn = false;
+    }
+}
+
+let copyBtn = document.querySelector("#copybtn");
+copyBtn.addEventListener("click",function(){
+    if(qrText.value == "" || qrImg.src == "file:///D:/WebDevlopment/JavaScriptProject/QRCodeGenerator/QRcodeGenerator.html"){
+        warning();
+    }
+    else{
+        let tempTextarea = document.createElement("input");
+        container.append(tempTextarea);
+        tempTextarea.value = qrImg.src;
+        tempTextarea.select();
+        document.execCommand("copy");
+        tempTextarea.remove();
+        alert("URL copied to clipboard!");
+        warn.remove();
+    }
+})
+
