@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
+body{
+    background-color: #2a2727;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vb;
+    background-color: rgb(240, 248, 255);
+    position: relative;
+    top: 20vh;
+    left: 80vb;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h1{
+    color: wheat;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    font-size: 40px;
+    text-decoration:underline;
+    }
+
+.container p {
+    align-self: start;
+    font-size: 15px;
+    text-align: start;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ;
+}
+
+#qrText{
+    padding-left: 10px;
+    width: 90%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ;
+
+}
+
+#btn{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(49, 49, 142);
+    color: white;
+    margin-bottom: 10px;
+    transition: margin 1s ;
+}
+
+#resetbtn{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(49, 49, 142);
+    margin-bottom: 10px;
+    transition: margin 1s ;
+    color: white;
+}
+
+#btn:active{
+    background-color : black;
+}
+
+#resetbtn:active{
+    background-color: rgb(0, 0, 0);
+}
